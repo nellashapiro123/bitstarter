@@ -97,7 +97,24 @@
       color: #ccccff;
       }
       
+      div.addthis_toolbox {
+      width:180px;
+      margin: 0 auto;
+      }
       </style>
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-42984548-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
     </head>
   <body>
   
@@ -136,7 +153,7 @@
 
     <div class="row-fluid pitch">
       <div class="span5 offset1 video">
-	<img class="img-polaroid" src="http://placehold.it/480X300">
+	<img class="img-polaroid" alt="placeholder" src="http://placehold.it/480X300">
       </div>
     
       <div class="span5 actions">
@@ -179,8 +196,16 @@
     
 	<div class="row-fluid">
 	<div class="span8 offset2 social">
-	  <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter </button>
-	  <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
+	  <!-- AddThis Button BEGIN -->
+	  <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+	    <a class="addthis_button_preferred_1"></a>
+	    <a class="addthis_button_preferred_2"></a>
+	    <a class="addthis_button_compact"></a>
+	    <a class="addthis_counter addthis_bubble_style"></a>
+	  </div>
+	  <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+	  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51fe98df7e72cd76"></script>
+	  <!-- AddThis Button END -->
 	</div>
 	</div>
       </div>
@@ -189,7 +214,7 @@
     <div class="row-fluid section1">
         
       <div class="span5 offset1 asset">
-          <img class="img-polaroid" src="http://i.imgur.com/bxQVwUh.jpg">
+          <img class="img-polaroid" alt="Placeholder" src="http://i.imgur.com/bxQVwUh.jpg">
       </div>
       <div class="span5 copy">
           <p>
@@ -213,7 +238,7 @@
           </p>
         </div>
         <div class="span5 asset">
-          <img class="img-polaroid" src="http://i.imgur.com/zWJIjVZ.jpg">
+          <img class="img-polaroid" alt="Placeholder" src="http://i.imgur.com/zWJIjVZ.jpg">
         </div>
       </div>
       
@@ -261,5 +286,18 @@
 	       put at the bottom of the page. </p>
       </div>
   </div>
- </body>
+ 
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-42984548-1', 'getmas.org');
+    ga('send', 'pageview');
+
+  </script>
+
+
+</body>
 </html>
